@@ -1,0 +1,29 @@
+{
+  "name": "webpack-es6-boilerplate",
+  "version": "1.0.0",
+  "description": "webpack es6 boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config config/webpack.dev.js",
+    "dev": "webpack serve --config config/webpack.dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Seogeurim/webpack-es6-boilerplate.git"
+  },
+  "author": "Seogeurim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Seogeurim/webpack-es6-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Seogeurim/webpack-es6-boilerplate#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.8",
+    "babel-loader": "^8.2.2",
+    "html-webpack-plugin": "^5.3.2",
+    "webpack": "^5.46.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
