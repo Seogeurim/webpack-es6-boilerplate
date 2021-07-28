@@ -7,5 +7,12 @@
 
   &__desc {
     font-style: italic;
+
+    img {
+      display: block;
+      margin: 20px auto;
+      width: 60px;
+      height: 60px;
+    }
   }
 }
