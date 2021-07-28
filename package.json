@@ -4,8 +4,10 @@
   "description": "webpack es6 boilerplate",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config config/webpack.dev.js",
-    "dev": "webpack serve --config config/webpack.dev.js"
+    "lint": "eslint --ext .js .",
+    "lint:fix": "eslint --ext .js . --fix",
+    "dev": "webpack serve --config config/webpack.dev.js",
+    "build": "webpack --config config/webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -22,8 +24,14 @@
     "@babel/preset-env": "^7.14.8",
     "babel-loader": "^8.2.2",
     "css-loader": "^6.2.0",
+    "eslint": "^7.31.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-prettier": "^3.4.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
+    "prettier": "^2.3.2",
     "sass": "^1.36.0",
     "sass-loader": "^12.1.0",
     "style-loader": "^3.2.1",
