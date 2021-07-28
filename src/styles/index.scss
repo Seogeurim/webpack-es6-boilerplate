@@ -1,0 +1,11 @@
+.welcome {
+  text-align: center;
+
+  &__title {
+    color: darkgreen;
+  }
+
+  &__desc {
+    font-style: italic;
+  }
+}
