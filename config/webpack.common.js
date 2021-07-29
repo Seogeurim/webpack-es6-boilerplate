@@ -35,18 +35,17 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.(png|jpe?g|gif|svg)$/i,
-        use: {
-          loader: 'file-loader',
-          options: {
-            name: 'assets/[contenthash].[ext]',
-          },
-        },
-      },
-      {
         test: /\.(scss|sass|css)$/i,
         use: ['style-loader', 'css-loader', 'sass-loader'],
         exclude: /node_modules/,
+      },
+      {
+        test: /\.(ico|png|jpe?g|gif)$/i,
+        type: 'asset/resource',
+      },
+      {
+        test: /\.(ttf|otf|svg)$/i,
+        type: 'asset/inline',
       },
     ],
   },
