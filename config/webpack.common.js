@@ -1,5 +1,6 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const paths = require('./paths');
 
@@ -36,11 +37,6 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.(scss|sass|css)$/i,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
-        exclude: /node_modules/,
-      },
-      {
         test: /\.(ico|png|jpe?g|gif)$/i,
         type: 'asset/resource',
       },
@@ -58,6 +54,7 @@ module.exports = {
       favicon: paths.public + '/favicon.ico',
       filename: 'index.html',
     }),
+    new MiniCssExtractPlugin(),
   ],
   resolve: {
     modules: ['node_modules'],
